@@ -1,2 +1,32 @@
+
+<!DOCTYPE >
 <html>
+<head>
+<meta />
+<title>Login basico</title>
+</head>
+
+<body>
+
+<form name=form>
+
+<P>Usuario:    <input type=text name=usuario placeholder="Ingresa Usuario"> 
+<P>Contraseña: <input type=password name=contra placeholder="Ingresa Contraseña"> 
+<br>
+<input onclick=validar() type=button value=Ingresar>
+
+</form> 
+
+<script > 
+function validar(){
+if (document.form.contra.value=='admin' && document.form.usuario.value=='admin'){ 
+        alert("Datos correctos");
+    } 
+    else{ 
+         alert("Datos incorrectos"); 
+    } 
+} 
+</script> 
+
+</body>
 </html>
